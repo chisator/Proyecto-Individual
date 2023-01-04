@@ -211,6 +211,14 @@ div.copy{
     left: -35px;
     bottom: -25px;
 }
+input:focus, input[type]:focus{
+    border:solid 2px #2968c8;
+    
+    outline: 0 none;
+
+    
+    
+}
 @media(min-width:481px){
     header div ul{
         display:block;
