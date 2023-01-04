@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    
+}
+.error{
+    color:red;
+    text-align:start;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+    background-color:#ebebeb ;
+        
+}
+
+header{
+    background-color:#EAC926;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+    
+}
+.header1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header div ul{
+    display: none;
+}
+img.mercado{
+    width:50%; 
+    height: 110px;
+    
+    
+}
+img.home{
+    
+    width:100%; 
+    height: 120px;
+    margin-top: 230px;
+}
+div.busqueda1{
+    display:flex;
+    align-items: center;
+    font-weight: 350;
+    
+}
+div.busqueda{
+    display: flex;
+    align-items: center;    
+    border:1px;
+    font-size: 15px; 
+    background-color: white;    
+    width:100%; 
+    height:40px;
+    padding: 5px 0 5px 7px;
+    border-radius: 8px;
+    
+}
+.i{
+    
+    margin-left: -25px;
+    border:1px;
+    
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    
+}
+div.comprar{
+    text-align: center;
+    font-weight: 400;
+    margin:10px;
+}
+div ul li a{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    transition: all 500ms;
+
+    
+}
+div ul li a:hover{
+    color: #0022AA;
+}
+ul{
+    color: #222222;
+   display: inline-block; 
+   padding: 5px 0;
+    list-style: none;
+}
+
+i.fa-bars{
+    display: block;
+    color: white;
+    background-color:#1259c3;
+    font-size: 22px;
+    text-align: center;
+    max-width: 50px;
+    border-radius: 8px;
+    padding: 11px 0;
+    margin: auto;
+    
+}
+div.burger-menu{
+    margin: 10px;
+    text-align: center;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+    
+    
+    
+}
+
+
+main article div{
+    position: relative;
+    background-color: #ffff;
+    align-items: center;
+    transition: 1s all;
+
+}
+
+div.separacion{
+    top :-2px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    
+}
+
+
+.description{
+    display: none;
+    opacity: 0;
+    
+    
+}
+main article div i{
+    
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 1s all;
+    
+    
+}
+main div.conteiner h3{
+    opacity: 0.6;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.discount{
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+}
+h4.description{
+    width: 90%;
+    font-weight: 600;
+    color:gray
+}
+main article i,
+.discount{
+    color: #39b53a;
+}
+footer{
+    text-align: center;
+    
+} 
+footer div i{
+    text-align: center;
+    color: #1259c3;
+    font-size: 2em;
+}
+footer.letra div h4{
+    font-weight:500px;
+    font-size:20px;
+}
+
+footer.letra div p{
+    left: 10%;
+    width:80%;
+    bottom: 30px;
+    position: relative;
+    padding: 1px;
+    font-size:15px;
+    font-weight: 400;
+    
+}
+div.copy{
+    position: relative;
+    left: -35px;
+    bottom: -25px;
+}
+@media(min-width:481px){
+    header div ul{
+        display:block;
+    }
+    main article{
+        transition:500ms all;
+    }
+    .description{
+        display: block;
+        
+    }
+    article:hover .description{
+        opacity: 1;
+        
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    article:hover i{
+        transform: rotate(-90deg);
+    }
+    
+    
+    div.burger-menu{
+        display:none;
+    }
+    img.mercado{
+        height: 200px;
+        width: 300px;
+        
+    }
+    
+    img.home{
+        height: 200px;
+    }
+    header section.header2{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    .header2 ul{
+        display: flex;
+    }
+    .header2 li{
+        margin: 0 5px;
+
+    }
+    footer i:hover{
+        color: #0022AA;
+    }
+    
+    
+}
+@media(min-width:768px){
+    img.home{
+        height: 230px;
+        margin-top: 180px;
+    }
+    img.mercado{
+        
+        width: 30%;
+        height: 100px;
+    }
+    
+    .comprar{
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    main div.caja1{
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        
+    }
+    main article{
+        width: 44%;
+        margin: 10px 19px;
+    }
+    .conteiner h3{
+        position: relative;
+        left: 20px;
+    }
+    div.busqueda1{
+        width: 30%;
+    }
+    div.comprar{
+        font-size:14px ;
+    }
+    .header1{
+        
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        margin: auto;
+        justify-content:space-around;
+
+    }
+    .sin-copy{
+        margin-top: 200px;
+        display: flex;
+
+    }
+}
+/* para que no se vea: display:none;
+para que se vea: display: block;*/
+@media (min-width:1200px){
+    .header1,
+    .header2 {
+       max-width: 1200px; 
+        
+       margin:auto;
+    }
+    .header2 li{
+        margin: 0 10px;
+        margin-top: 30px;
+
+    }
+    main article{
+        width: 22%;
+        margin: 25px 15px;
+    }
+    .conteiner h3{
+        top: 30px;
+    }
+    div.comprar{
+        font-size: 17px;
+    }
+    img.mercado{
+        
+        width: 30%;
+        height: 150px;
+    }
+    img.home{
+        height: 250px;
+        margin-top: 260px;
+    }
+}
