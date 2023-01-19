@@ -15,6 +15,14 @@ input{
     border-radius: 5px;
     margin: 10px 0;
 }
+input:focus, input[type]:focus{
+    border:solid 2px #2968c8;
+    
+    outline: 0 none;
+
+    
+    
+}
 main p{
     text-align: start;
     
